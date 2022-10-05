@@ -11,31 +11,47 @@
         <header>
             <h1>To Do List</h1>
         </header>
-        <nav>
-            <button type="button" id="todayView">오늘만 보기</button>
-            <button type="button" id="tomorrowView">내일만 보기</button>
-            <button type="button" id="bothView">함께 보기</button>
+        <nav class="option">
+            <button type="button" id="options_btn_today">오늘만 보기</button>
+            <button type="button" id="options_btn_tomorrow">내일만 보기</button>
+            <button type="button" id="options_btn_both">함께 보기</button>
         </nav>
-        <main>
-            <section>
-                <h2>오늘 할 일</h2>
-                <ul>
-                    <li>야미야미</li>
-                    <li>먼진 회의</li>
+        <main class="" todos>
+            <section class="todos_today">
+                <h2 class="todos_header">오늘 할 일</h2>
+                <ul class="todos_items">
+                    <li class="todos_item">
+                        <span class="todos_name">야미야미</span>
+                        <button type="button" class="todos_delete">X</button>
+                    </li>
+                    <li class="todos_item">
+                        <span class="todos_name">먼진회의</span>
+                        <button type="button" class="todos_delete">X</button>
+                    </li>
                 </ul>
-                <div><input type="text" /><button>+</button></div>
+                <div class="todos_input_wrapper">
+                    <input type="text" class="todos_input" />
+                    <button class="todos_add_btn">+</button>
+                </div>
             </section>
-            <section>
-                <h2>내일 할 일</h2>
-                <ul>
-                    <li>아 배고파</li>
-                    <li>sopt 미팀 인스타그램</li>
+            <section class="tomorrow">
+                <h2 class="todos_header">내일 할 일</h2>
+                <ul class="todos_items">
+                    <li class="todos_item">
+                        <span class="todos_name">야미야미</span>
+                        <button type="button" class="todos_delete">X</button>
+                    </li>
+                    <li class="todos_item">
+                        <span class="todos_name">먼진회의</span>
+                        <button type="button" class="todos_delete">X</button>
+                    </li>
                 </ul>
-                <div><input type="text" /><button>+</button></div>
+                <div class="todos_input_wrapper">
+                    <input type="text" class="todos_input" />
+                    <button class="todos_add_btn">+</button>
+                </div>
             </section>
         </main>
-        <footer>
-            <p>made by 혜으닝</p>
-        </footer>
+        <footer>made by 혜으닝</footer>
     </body>
 </html>
