@@ -1,0 +1,10 @@
+@import "reset.css";
+
+body {
+    font-family: Pretendard-Regular;
+    width: 100vw;
+    height: 100vh;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+}
