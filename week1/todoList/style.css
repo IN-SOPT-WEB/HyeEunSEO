@@ -9,7 +9,6 @@ body {
     flex-direction: column;
 }
 header,
-nav,
 footer {
     display: flex;
     justify-content: center;
@@ -26,11 +25,14 @@ header {
 
 /*********nav*********/
 .option {
-    padding: 1rem 0;
-    gap: 1rem;
+    padding: 1rem 22rem;
     background-color: rgb(169, 215, 255);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-items: center;
 }
 .option button {
+    width: 9rem;
     font-family: Pretendard-Regular;
     padding: 0.5rem 1rem;
     border-radius: 2rem;
@@ -62,7 +64,7 @@ header {
     padding: 1rem;
     width: 50%;
 }
-.todos_today{
+.todos_today {
     border-right: 1px solid #333333;
 }
 .todos_header {
@@ -93,7 +95,7 @@ header {
     cursor: pointer;
 }
 .todos_delete:hover,
-.todos_delete:active{
+.todos_delete:active {
     background-color: rgb(75, 75, 75);
     color: white;
 }
@@ -102,9 +104,8 @@ header {
     height: 2rem;
     display: grid;
     grid-template-columns: 1fr 2rem;
-    
 }
-.todos_add{
+.todos_add {
     cursor: pointer;
     border: 1px solid rgb(75, 75, 75);
     border-radius: 0;
@@ -115,9 +116,8 @@ footer {
     padding: 1rem 0;
     font-size: 1.5rem;
     background-color: rgb(235, 255, 213);
-
     width: 100%;
-    height:3.5rem
+    height: 3.5rem;
     position: absolute;
     bottom: 0;
 }
