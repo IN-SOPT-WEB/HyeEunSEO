@@ -18,23 +18,35 @@
                     <img src="./assets/search.svg" width="22" alt="검색" />
                 </button>
                 <button type="button" class="header_btn newContents">새 글 작성</button>
-                <button type="button" class="header_btn menu">
+                <span class="header_btn menu">
                     <img
                         src="./assets/hennni.png"
                         class="header_btn menu_profile"
                         alt="프로필사진"
                     />
                     <img src="./assets/dropdown.svg" width="24" alt="드롭다운" />
-                </button>
-                <span>
-                    <img />
-                    <div></div>
                 </span>
             </section>
         </header>
         <nav>
-            <section id="left_nav"></section>
-            <section id="right_nav"></section>
+            <section id="left_nav">
+                <button type="button" class="nav_btn trending">
+                    <img src="./assets/trendUp.svg" width="20" alt="상승" />
+                    <p>트렌딩</p>
+                </button>
+                <button type="button" class="nav_btn recent">
+                    <img src="./assets/schedule.svg" width="20" alt="시간" class="recent_icon" />
+                    <!-- svg 색 우예 바꿉니꺼 -->
+                    <p>최신</p>
+                </button>
+                <span class="nav_btn choosePeriod">
+                    <p>이번 주</p>
+                    <img src="./assets/dropdown.svg" width="20" alt="드롭다운" />
+                </span>
+            </section>
+            <section id="right_nav">
+                <img src="./assets/more.svg" width="24" alt="더보기" />
+            </section>
         </nav>
         <main>
             <section class="card_section">

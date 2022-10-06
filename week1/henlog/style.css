@@ -8,12 +8,14 @@ body {
     display: flex;
     flex-direction: column;
     background-color: #f8f9fa;
+    margin: 0 1.6rem;
 }
 a {
     text-decoration: none;
     color: #24292e;
 }
 button {
+    font-family: Pretendard-Regular;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -22,7 +24,6 @@ button {
 /*********header*********/
 header {
     height: 6.4rem;
-    margin: 0 1.6rem;
 
     display: flex;
     justify-content: space-between;
@@ -44,7 +45,6 @@ header {
     align-items: center;
 }
 .newContents {
-    font-family: Pretendard-Regular;
     background-color: #f8f9fa;
     border: 1px solid #212529;
     border-radius: 20px;
@@ -58,4 +58,41 @@ header {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+}
+
+/*********nav*********/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#left_nav,
+#right_nav {
+    display: flex;
+    align-items: center;
+}
+.nav_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 8rem;
+    height: 4.8rem;
+}
+.trending {
+    color: #212529;
+    border-bottom: 2px solid #212529;
+    font-weight: bold;
+}
+.recent {
+    color: #868e96;
+}
+.choosePeriod {
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    width: 8.4rem;
+    height: 3.2rem;
 }
