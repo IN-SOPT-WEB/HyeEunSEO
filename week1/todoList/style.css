@@ -25,11 +25,10 @@ header {
 
 /*********nav*********/
 .option {
-    padding: 1rem 22rem;
+    padding: 1rem 0;
     background-color: rgb(169, 215, 255);
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    place-items: center;
+    display: flex;
+    justify-content: center;
 }
 .option button {
     width: 9rem;
