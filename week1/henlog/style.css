@@ -2,13 +2,13 @@
 
 body {
     font-family: Pretendard-Regular;
-    width: 100vw;
+    width: 1024px;
     height: 100vh;
     color: #24292e;
     display: flex;
     flex-direction: column;
-    background-color: #f8f9fa;
-    margin: 0 1.6rem;
+    background-color: #e9ecef;
+    margin: 0 auto;
 }
 a {
     text-decoration: none;
@@ -24,7 +24,7 @@ button {
 /*********header*********/
 header {
     height: 6.4rem;
-
+    margin: 0 1.6rem;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -58,6 +58,8 @@ header {
     width: 4rem;
     height: 4rem;
     border-radius: 50%;
+    display: flex;
+    gap: 1rem;
 }
 
 /*********nav*********/
@@ -65,6 +67,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 2.4rem 1.6rem 3.2rem;
 }
 #left_nav,
 #right_nav {
@@ -95,4 +98,77 @@ nav {
     background-color: #ffffff;
     width: 8.4rem;
     height: 3.2rem;
+}
+
+/*********main*********/
+main {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 1.6rem;
+}
+.card {
+    width: 48rem;
+    height: 46rem;
+    border-radius: 4px;
+    margin: 1px;
+    background-color: #ffffff;
+}
+.card_thumbnail {
+    width: 100%;
+    height: 26rem;
+}
+.card_contents {
+    padding: 1.6rem;
+}
+.card_title {
+    margin-bottom: 0.7rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.card_desc {
+    color: #495057;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    line-height: 1.8;
+    width: 100%;
+    display: inline-block;
+    white-space: normal;
+    height: 5.4rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.card_subInfo {
+    color: #868e96;
+    font-size: 0.75rem;
+    line-height: 1.5;
+
+    display: flex;
+    gap: 1rem;
+}
+.card_footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1.6rem;
+    border-top: 1px solid #f1f3f5;
+}
+.card_userInfo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card_writer {
+    border-radius: 50%;
+    margin-right: 0.8rem;
+}
+.card_writerName {
+    color: #868e96;
+}
+.card_writerId {
+    color: #000000;
+}
+.card_likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
 }
