@@ -4,7 +4,58 @@ body {
     font-family: Pretendard-Regular;
     width: 100vw;
     height: 100vh;
-    color: #333333;
+    color: #24292e;
     display: flex;
     flex-direction: column;
+    background-color: #f8f9fa;
+}
+a {
+    text-decoration: none;
+    color: #24292e;
+}
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+/*********header*********/
+header {
+    height: 6.4rem;
+    margin: 0 1.6rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#left_header h1 {
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+#right_header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.header_btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newContents {
+    font-family: Pretendard-Regular;
+    background-color: #f8f9fa;
+    border: 1px solid #212529;
+    border-radius: 20px;
+    width: 10rem;
+    height: 3rem;
+
+    font-size: 1.5rem;
+    word-spacing: 1px;
+}
+.menu_profile {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
 }
