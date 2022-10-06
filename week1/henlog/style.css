@@ -198,10 +198,7 @@ main {
 }
 @media (max-width: 1440px) and (min-width: 1056px) {
     body {
-        width: 1024px;
-    }
-    .card {
-        width: calc(50% - 2rem);
+        width: 1040px;
     }
 }
 
