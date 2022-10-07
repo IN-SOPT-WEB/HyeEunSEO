@@ -27,15 +27,15 @@ footer {
     justify-content: center;
     align-items: center;
 }
-/* button {
+button {
     font-family: Pretendard-Regular;
     background-color: transparent;
     border: none;
     cursor: pointer;
-} */
+}
 
 /*********header*********/
-header {
+#header {
     padding: 1rem 0;
     font-size: 3rem;
     background-color: var(--bg-color1);
@@ -43,13 +43,13 @@ header {
 }
 
 /*********nav*********/
-.option {
+#navBar {
     padding: 1rem 0;
     background-color: var(--bg-color2);
     display: flex;
     justify-content: center;
 }
-.option button {
+#navBar button {
     width: 9rem;
     font-family: Pretendard-Regular;
     padding: 0.5rem 1rem;
@@ -59,22 +59,22 @@ header {
     color: var(--font-color2);
     cursor: pointer;
 }
-.option button:hover,
-.option button:active {
+#navBar button:hover,
+#navBar button:active {
     background-color: var(--font-color2);
     color: var(--font-color3);
 }
 
 /*********main*********/
-.todos {
+#todos {
     display: flex;
     width: 100%;
     height: calc(100%-3.5rem);
 
     flex: 1;
 }
-.todos_today,
-.todos_tomorrow {
+.todos__today,
+.todos__tomorrow {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -82,14 +82,14 @@ header {
     padding: 1rem;
     width: 50%;
 }
-.todos_today {
+.todos__today {
     border-right: 1px solid var(--font-color1);
 }
-.todos_header {
+.todos__header {
     font-size: 2.5rem;
     padding: 0.5rem 0;
 }
-.todos_items {
+.todos__items {
     width: 100%;
     font-size: 1.5rem;
     padding: 0.5rem 0;
@@ -99,40 +99,41 @@ header {
     gap: 1rem;
     flex: 1;
 }
-.todos_item {
+.todos__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5rem 0;
     border-bottom: 1px dotted var(--bg-color2);
 }
-.todos_delete {
+.todos__delete-btn {
     border-radius: 1rem;
     border: 1px solid var(--border-color1);
     color: var(--font-color4);
     cursor: pointer;
 }
-.todos_delete:hover,
-.todos_delete:active {
+.todos__delete-btn:hover,
+.todos__delete-btn:active {
     background-color: var(--font-color4);
     color: var(--font-color2);
 }
-.todos_input_wrapper {
+.todos__add-item {
     width: 100%;
-    height: 2rem;
+    height: 3rem;
     display: grid;
     grid-template-columns: 1fr 2rem;
     position: relative;
     top: -3.5rem;
 }
-.todos_add {
+.todos__add-btn {
     cursor: pointer;
     border: 1px solid var(--font-color4);
     border-radius: 0;
+    width: 2.5rem;
 }
 
 /*********footer*********/
-footer {
+#footer {
     padding: 1rem 0;
     font-size: 1.5rem;
     background-color: var(--bg-color4);
