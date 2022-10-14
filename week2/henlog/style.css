@@ -113,23 +113,29 @@ button {
     width: 8.4rem;
     height: 3.2rem;
 }
-.filter__optionLists {
-    position: relative;
-    top: 8em;
-    right: 14rem;
+.option-Items {
+    position: absolute;
+    top: 11em;
+    left: 11rem;
 
     width: 15rem;
     font-size: 1.2rem;
     background-color: var(--bg-color3);
     box-shadow: rgb(0 0 0 / 10%) 0px 0px 8px 0px;
+    z-index: 3;
 }
-.filter__option {
+.option-item {
     padding: 1rem;
     border-bottom: 1px solid var(--border-color3);
+    cursor: pointer;
 }
-.filter__option:hover,
-.filter__option:active {
+.option-item:hover,
+.option-item:active {
     color: var(--font-color5);
+}
+.hidden {
+    overflow: hidden;
+    height: 0;
 }
 
 /*********main*********/
