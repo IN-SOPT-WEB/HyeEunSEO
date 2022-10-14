@@ -10,8 +10,10 @@
     --font-color2: #868e96;
     --font-color3: #495057;
     --font-color4: #333333;
+    --font-color5: #12b886;
     --border-color1: #212529;
     --border-color2: #f1f3f5;
+    --border-color3: #dee2e6;
 }
 body {
     font-family: Pretendard-Regular;
@@ -102,7 +104,7 @@ button {
 .recent {
     color: var(--font-color2);
 }
-.options {
+.option {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -110,6 +112,24 @@ button {
     background-color: var(--bg-color3);
     width: 8.4rem;
     height: 3.2rem;
+}
+.filter__optionLists {
+    position: relative;
+    top: 8em;
+    right: 14rem;
+
+    width: 15rem;
+    font-size: 1.2rem;
+    background-color: var(--bg-color3);
+    box-shadow: rgb(0 0 0 / 10%) 0px 0px 8px 0px;
+}
+.filter__option {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color3);
+}
+.filter__option:hover,
+.filter__option:active {
+    color: var(--font-color5);
 }
 
 /*********main*********/
