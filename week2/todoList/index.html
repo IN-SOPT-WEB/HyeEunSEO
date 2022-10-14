@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>To Do List</title>
+        <link href="./style.css" rel="stylesheet" />
+        <script src="./main.js" defer></script>
+    </head>
+    <body>
+        <header id="header">
+            <h1>To Do List</h1>
+        </header>
+        <nav id="navBar">
+            <button type="button" class="navBar__today">오늘만 보기</button>
+            <button type="button" class="navBar__tomorrow">내일만 보기</button>
+            <button type="button" class="navBar__both">함께 보기</button>
+        </nav>
+        <main id="todos">
+            <section class="todos__today open">
+                <h2 class="todos__header">오늘 할 일</h2>
+                <ul class="todos__items">
+                    <li class="todos__item">
+                        <span class="todos__name">야미야미</span>
+                        <button type="button" class="todos__delete-btn">X</button>
+                    </li>
+                    <li class="todos__item">
+                        <span class="todos__name">먼진회의</span>
+                        <button type="button" class="todos__delete-btn">X</button>
+                    </li>
+                </ul>
+                <div class="todos__add-item">
+                    <input type="text" class="todos__input" placeholder="TODO를 추가해주세요." />
+                    <button class="todos__add-btn">+</button>
+                </div>
+            </section>
+            <section class="todos__tomorrow open">
+                <h2 class="todos__header">내일 할 일</h2>
+                <ul class="todos__items">
+                    <li class="todos__item">
+                        <span class="todos__name">야미</span>
+                        <button type="button" class="todos__delete-btn">X</button>
+                    </li>
+                    <li class="todos__item">
+                        <span class="todos__name">먼진회의</span>
+                        <button type="button" class="todos__delete-btn">X</button>
+                    </li>
+                </ul>
+                <div class="todos__add-item">
+                    <input type="text" class="todos__input" placeholder="TODO를 추가해주세요." />
+                    <button class="todos__add-btn">+</button>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">made by 혜으닝</footer>
+    </body>
+</html>
