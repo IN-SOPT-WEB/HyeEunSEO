@@ -4,10 +4,11 @@ const $ = (selector) => document.querySelector(selector);
 const $$ = (selector) => document.querySelectorAll(selector);
 
 const currentOptionBox = $(".current-optionBox");
-const optionLists = $(".option-Items");
+const optionLists = $(".option-items");
 const optionItem = $$(".option-item");
 const currentOption = $(".current-option");
 
+// ** Dropdown **
 // 1. option을 클릭했을 때 ul의 hidden이 toggle
 currentOptionBox.addEventListener("click", () => {
     optionLists.classList.toggle("hidden");
