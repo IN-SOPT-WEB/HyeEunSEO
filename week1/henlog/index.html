@@ -1,0 +1,1436 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>henlog</title>
+        <link href="./style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <header id="header">
+            <a href="./index.html" id="logo"><h1>henlog</h1></a>
+            <div id="header__btn-wrapper">
+                <button type="button" class="header__btn changeThemeBtn">
+                    <img src="./assets/sunny.svg" width="24" alt="다크모드 설정" />
+                </button>
+                <button type="button" class="header__btn searchBtn">
+                    <img src="./assets/search.svg" width="22" alt="검색" />
+                </button>
+                <button type="button" class="header__btn newContentsBtn">새 글 작성</button>
+                <span class="header__btn menuBtn">
+                    <img src="./assets/hennni.png" class="header__btn profile" alt="프로필사진" />
+                    <img src="./assets/dropdown.svg" width="24" alt="드롭다운" />
+                </span>
+            </div>
+        </header>
+        <nav id="nav">
+            <section id="filters">
+                <button type="button" class="filter trending">
+                    <img src="./assets/trendUp.svg" width="20" alt="상승" />
+                    <p>트렌딩</p>
+                </button>
+                <button type="button" class="filter recent">
+                    <img src="./assets/schedule.svg" width="20" alt="시간" class="recent_icon" />
+                    <!-- svg 색 우예 바꿉니꺼 -->
+                    <p>최신</p>
+                </button>
+                <span class="filter options">
+                    <p>이번 주</p>
+                    <img src="./assets/dropdown.svg" width="20" alt="드롭다운" />
+                </span>
+            </section>
+            <section id="nav__moreBtn">
+                <img src="./assets/more.svg" width="24" alt="더보기" />
+            </section>
+        </nav>
+        <main id="henlog">
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+            <section class="card">
+                <img src="./assets/thumbnail.jpg" class="card__thumbnail" alt="썸네일" />
+                <article class="card__contents">
+                    <div class="card__info">
+                        <h4 class="card__title">싸랑해 내사랑</h4>
+                        <p class="card__desc">
+                            우리들 만나고 헤어지는 모든 일들이 어쩌면 어린애들 놀이 같아 슬픈 동화
+                            속에 구름 타고 멀리 날으는 작은 요정들의 슬픈 이야기처럼 그러나 우리들
+                            날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어 난 오직 그대 사랑하는 마음에
+                            바보같은 꿈 꾸며 이룰 수 없는 저 꿈의 나라로 길을 잃고 헤매고있어 그러나
+                            우리들 날지도 못하고 울지만 사랑은 아름다운 꿈결처럼 고운 그대 손을 잡고
+                            밤하늘을 날아서 궁전으로 갈 수도 있어
+                        </p>
+                    </div>
+                    <div class="card__subInfo">
+                        <span>5일 전 | 4개의 댓글</span>
+                    </div>
+                </article>
+                <footer class="card__footer">
+                    <address class="card__userInfo">
+                        <img
+                            src="./assets/author.png"
+                            class="card__author"
+                            width="20"
+                            height="20"
+                            alt="작성자"
+                        />
+                        <span class="card__authorName"
+                            >by <b class="card__authorId">hen._.nni</b></span
+                        >
+                    </address>
+                    <figure class="card__likes">
+                        <img
+                            src="./assets/heart.svg"
+                            class="card__likes-icon"
+                            width="12"
+                            alt="좋아요"
+                        />421
+                    </figure>
+                </footer>
+            </section>
+        </main>
+    </body>
+</html>
