@@ -104,7 +104,7 @@ button {
 .recent {
     color: var(--font-color2);
 }
-.option {
+.current-optionBox {
     font-size: 1.2rem;
     display: flex;
     justify-content: center;
@@ -130,7 +130,7 @@ button {
     cursor: pointer;
 }
 .option-item:hover,
-.option-item:active {
+.active {
     color: var(--font-color5);
 }
 .hidden {
