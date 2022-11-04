@@ -1,5 +1,11 @@
-function App() {
-    return <div className="App"></div>;
-}
+import Header from "./components/Header";
+import Content from "./components/Content";
 
-export default App;
+export default function App() {
+    return (
+        <div>
+            <Header />
+            <Content />
+        </div>
+    );
+}
