@@ -24,7 +24,7 @@ const addTag = (text) => {
     tagSet.add(text);
 
     const li = document.createElement("li");
-    li.setAttribute("class", "tag-item");
+    li.classList("class", "tag-item");
     li.innerText = tagInput.value;
     tagItems.appendChild(li);
 
