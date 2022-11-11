@@ -1,32 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 
-export default function User({ userData }) {
-    console.log(userData);
-
+export default function User({ userInfo }) {
     return (
-        <St.Root>
-            <St.ProfileImg src={userData.avatar_url} alt="유저 프로필사진" />
-            <St.UserId>{userData.login}</St.UserId>
-            <St.UserName>{userData.name}</St.UserName>
-            <St.UserSite>
-                <a href={userData.html_url}>Visit {userData.login}</a>
-            </St.UserSite>
-            <St.UserInfo>
-                <St.UserItem>
-                    <h3>Followers</h3>
-                    <p>{userData.followers}</p>
-                </St.UserItem>
-                <St.UserItem>
-                    <h3>Following</h3>
-                    <p>{userData.following}</p>
-                </St.UserItem>
-                <St.UserItem>
-                    <h3>Repos</h3>
-                    <p>{userData.public_repos}</p>
-                </St.UserItem>
-            </St.UserInfo>
-        </St.Root>
+        userInfo && (
+            <St.Root>
+                <St.ProfileImg src={userInfo.avatar_url} alt="유저 프로필사진" />
+                <St.UserId>{userInfo.login}</St.UserId>
+                <St.UserName>{userInfo.name}</St.UserName>
+                <St.UserSite>
+                    <a href={userInfo.html_url}>Visit {userInfo.login}</a>
+                </St.UserSite>
+                <St.UserInfo>
+                    <St.UserItem>
+                        <h3>Followers</h3>
+                        <p>{userInfo.followers}</p>
+                    </St.UserItem>
+                    <St.UserItem>
+                        <h3>Following</h3>
+                        <p>{userInfo.following}</p>
+                    </St.UserItem>
+                    <St.UserItem>
+                        <h3>Repos</h3>
+                        <p>{userInfo.public_repos}</p>
+                    </St.UserItem>
+                </St.UserInfo>
+            </St.Root>
+        )
     );
 }
 

@@ -1,24 +1,34 @@
-import React from "react";
+import { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-export default function Search({ setUserName }) {
-    // 엔터 누를 때 userId 받아오기
-    const searchUserId = (e) => {
-        if (window.event.keyCode === 13) {
-            setUserName(`${e.target.value}`);
+import axios from "axios";
+
+export default function Search({ userInfo, setUserInfo }) {
+    const navigate = useNavigate();
+
+    useEffect(() => {
+        getUserInfo();
+    }, [userInfo]);
+
+    const getUserInfo = async (e) => {
+        if (e.keyCode === 13) {
+            const { data } = await axios.get(`https://api.github.com/users/${e.target.value}`);
+            setUserInfo(data.data);
+            navigate(`/search/${e.target.value}`);
         }
     };
 
     return (
-        <St.Root>
+        <St.SearchWrapper>
             <St.Title>깃허브 다 찾아내주마</St.Title>
-            <St.SearchBtn type="search" placeholder="Github Username" onKeyUp={searchUserId} />
-        </St.Root>
+            <St.Input type="search" placeholder="Github Username" onKeyUp={getUserInfo} />
+        </St.SearchWrapper>
     );
 }
 
 const St = {
-    Root: styled.div`
+    SearchWrapper: styled.div`
         padding: 1rem 3rem;
         margin: 5rem 0 2rem;
         border: 3px solid black;
@@ -38,7 +48,7 @@ const St = {
         color: #ff7e94;
     `,
 
-    SearchBtn: styled.input`
+    Input: styled.input`
         padding: 0.3rem 0.5rem;
         border-radius: 3rem;
 
