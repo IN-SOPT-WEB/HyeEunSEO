@@ -31,7 +31,7 @@ export default function User({ userInfo }) {
 }
 
 const St = {
-    Root: styled.div`
+    Root: styled.section`
         border: 3px solid black;
         border-radius: 1rem;
         background-color: #28cdc8;
@@ -45,8 +45,8 @@ const St = {
     `,
 
     ProfileImg: styled.img`
-        width: 20rem;
-        height: 20rem;
+        width: 17rem;
+        height: 17rem;
         border: 3px solid black;
         border-radius: 1rem;
     `,
