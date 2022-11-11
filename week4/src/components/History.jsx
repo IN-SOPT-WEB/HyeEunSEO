@@ -2,17 +2,17 @@ import { useEffect } from "react";
 import styled from "styled-components";
 
 export default function History({ searchHistory, setSearchHistory }) {
-    const removeHistory = (history) => {
-        setSearchHistory(searchHistory.filter((i) => i !== history));
+    const removeHistory = (e) => {
+        setSearchHistory(searchHistory.filter((i) => i));
+        console.log(e.target.value);
     };
 
     return (
         <St.Root>
             {searchHistory &&
-                searchHistory.map((history) => {
-                    console.log(history);
+                searchHistory.map((history, idx) => {
                     return (
-                        <St.History>
+                        <St.History key={idx}>
                             <St.UserId>{history}</St.UserId>
                             <St.DeleteBtn onClick={removeHistory}>X</St.DeleteBtn>
                         </St.History>

@@ -43,8 +43,7 @@ export default function Main() {
                     onKeyUp={getUserInfo}
                     onClick={showHistory}
                 />
-                <History searchHistory={searchHistory} setSearchHistory={setSearchHistory} />
-                {/* {visible ? <History searchHistory={searchHistory} /> : <></>} */}
+                {visible ? <History searchHistory={searchHistory} /> : <></>}
             </St.SearchWrapper>
             <User userInfo={userInfo} />
         </St.Root>
